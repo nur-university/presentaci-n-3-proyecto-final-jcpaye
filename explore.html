@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Proyectos - Plataforma de Crowdfunding</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/explore/explore.css">
+    <link rel="stylesheet" href="css/explore/projectCard.css">
+    <link rel="stylesheet" href="css/explore/footer.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">CrowdFund</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="explore.html" class="active">Explorar Proyectos</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-secondary">Iniciar Sesión</a>
+                <a href="register.html" class="btn btn-primary">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Explorar Proyectos</h1>
+            <p>Descubre proyectos increíbles y ayuda a hacerlos realidad</p>
+        </div>
+    </section>
+
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" class="form-input search-input" placeholder="Buscar proyectos...">
+                <button class="btn btn-primary search-btn">Buscar</button>
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label">Categoría:</label>
+                    <select class="form-select filter-select">
+                        <option value="">Todas las categorías</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="arte">Arte y Diseño</option>
+                        <option value="juegos">Juegos</option>
+                        <option value="social">Impacto Social</option>
+                        <option value="educacion">Educación</option>
+                        <option value="salud">Salud</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Estado:</label>
+                    <select class="form-select filter-select">
+                        <option value="">Todos los estados</option>
+                        <option value="activo">Activo</option>
+                        <option value="financiado">Financiado</option>
+                        <option value="proximo">Próximo a finalizar</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Ordenar por:</label>
+                    <select class="form-select filter-select">
+                        <option value="reciente">Más recientes</option>
+                        <option value="popular">Más populares</option>
+                        <option value="financiacion">% de financiación</option>
+                        <option value="tiempo">Tiempo restante</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-header">
+                <h2>Proyectos Disponibles</h2>
+                <span class="results-count">Mostrando 24 de 156 proyectos</span>
+            </div>
+            
+            <div class="projects-grid grid grid-3">
+            
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Imagen del Proyecto</div>
+                        <div class="project-category">Tecnología</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Dispositivo IoT para Hogares Inteligentes</h3>
+                        <p class="project-creator">Por: <strong>Tech Innovations</strong></p>
+                        <p class="project-description">
+                            Un dispositivo revolucionario que conecta todos los aparatos de tu hogar 
+                            para crear un ecosistema inteligente y eficiente.
+                        </p>
+                        <div class="project-stats">
+                            <div class="funding-info">
+                                <span class="amount-raised">$18,500</span>
+                                <span class="goal">de $30,000</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 62%"></div>
+                            </div>
+                            <div class="project-meta">
+                                <span class="percentage">62% financiado</span>
+                                <span class="deadline">12 días restantes</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html" class="btn btn-primary btn-full">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Imagen del Proyecto</div>
+                        <div class="project-category">Arte</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Exposición de Arte Digital Interactivo</h3>
+                        <p class="project-creator">Por: <strong>Colectivo Artístico</strong></p>
+                        <p class="project-description">
+                            Una experiencia inmersiva que combina arte tradicional con tecnología 
+                            digital para crear instalaciones interactivas únicas.
+                        </p>
+                        <div class="project-stats">
+                            <div class="funding-info">
+                                <span class="amount-raised">$12,300</span>
+                                <span class="goal">de $20,000</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 62%"></div>
+                            </div>
+                            <div class="project-meta">
+                                <span class="percentage">62% financiado</span>
+                                <span class="deadline">18 días restantes</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html" class="btn btn-primary btn-full">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Imagen del Proyecto</div>
+                        <div class="project-category funded">Juegos</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Juego de Mesa Estratégico Medieval</h3>
+                        <p class="project-creator">Por: <strong>GameCrafters Studio</strong></p>
+                        <p class="project-description">
+                            Un juego de estrategia ambientado en la época medieval con mecánicas 
+                            innovadoras y componentes de alta calidad.
+                        </p>
+                        <div class="project-stats">
+                            <div class="funding-info">
+                                <span class="amount-raised">$25,600</span>
+                                <span class="goal">de $15,000</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <div class="project-meta">
+                                <span class="percentage">171% financiado</span>
+                                <span class="deadline">8 días restantes</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html" class="btn btn-success btn-full">¡Financiado!</a>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Imagen del Proyecto</div>
+                        <div class="project-category">Educación</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Plataforma de Aprendizaje para Niños</h3>
+                        <p class="project-creator">Por: <strong>EduTech Solutions</strong></p>
+                        <p class="project-description">
+                            Una aplicación educativa que hace el aprendizaje divertido mediante 
+                            juegos interactivos y contenido personalizado.
+                        </p>
+                        <div class="project-stats">
+                            <div class="funding-info">
+                                <span class="amount-raised">$8,900</span>
+                                <span class="goal">de $25,000</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 36%"></div>
+                            </div>
+                            <div class="project-meta">
+                                <span class="percentage">36% financiado</span>
+                                <span class="deadline">25 días restantes</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html" class="btn btn-primary btn-full">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Imagen del Proyecto</div>
+                        <div class="project-category">Social</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Purificadores de Agua para Comunidades</h3>
+                        <p class="project-creator">Por: <strong>Agua Limpia ONG</strong></p>
+                        <p class="project-description">
+                            Sistemas de purificación de agua de bajo costo para comunidades 
+                            rurales sin acceso a agua potable segura.
+                        </p>
+                        <div class="project-stats">
+                            <div class="funding-info">
+                                <span class="amount-raised">$14,200</span>
+                                <span class="goal">de $18,000</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 79%"></div>
+                            </div>
+                            <div class="project-meta">
+                                <span class="percentage">79% financiado</span>
+                                <span class="deadline">6 días restantes</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html" class="btn btn-primary btn-full">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Imagen del Proyecto</div>
+                        <div class="project-category">Salud</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">App de Monitoreo de Salud Mental</h3>
+                        <p class="project-creator">Por: <strong>MindCare Team</strong></p>
+                        <p class="project-description">
+                            Una aplicación que ayuda a las personas a monitorear y mejorar 
+                            su bienestar mental a través de herramientas basadas en evidencia.
+                        </p>
+                        <div class="project-stats">
+                            <div class="funding-info">
+                                <span class="amount-raised">$6,750</span>
+                                <span class="goal">de $22,000</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 31%"></div>
+                            </div>
+                            <div class="project-meta">
+                                <span class="percentage">31% financiado</span>
+                                <span class="deadline">20 días restantes</span>
+                            </div>
+                        </div>
+                        <a href="project-detail.html" class="btn btn-primary btn-full">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="btn btn-secondary" disabled>« Anterior</button>
+                <div class="page-numbers">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">8</button>
+                </div>
+                <button class="btn btn-secondary">Siguiente »</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CrowdFund</h3>
+                    <p>La plataforma líder en crowdfunding para hacer realidad tus proyectos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="explore.html">Explorar</a></li>
+                        <li><a href="register.html">Registrarse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CrowdFund. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
